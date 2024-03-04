@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f9eea3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 40px auto;
+    user-select: none;
+}
+
+img {
+    width: 450px;
+    margin: 0 auto;
+}
+
+input {
+    color: rgb(84, 15, 157);
+    background-color: rgb(88, 169, 213);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #0b691b;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+@keyframes scaleButton {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.2); /* Slightly larger scale midway */
+    }
+    100% {
+      transform: scale(1); /* Back to the original scale */
+    }
+}
+
+button:hover {
+    color: #d7cbce;
+    background-color: #0f421d;
+    animation: scaleButton 0.5s infinite;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ul li {
+    background-color: paleturquoise;
+    padding: 15px;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
